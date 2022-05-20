@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  border-bottom: dashed;
+}
+
+.top-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.top-nav li {
+  font-weight: 600;
+  display: inline;
+  text-transform: capitalize;
+  padding-right: 50px;
+}
+
+.dropdown ul {
+  position: absolute;
+  width: 200px;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  top: 50px;
+  opacity: 0;
+  transform: translateY(+2em);
+  visibility: visible;
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+}
+
+.dropdown ul:hover{
+  visibility: visible;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
