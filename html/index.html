@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/index.css">
-    <script type="text/javascript" src="/js/index.js"></script>
-
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/owl-carousel.css">
+    <script src="https://kit.fontawesome.com/f7dc4ba08c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>HEXASHOP</title>
 </head>
 
@@ -18,42 +19,364 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href=".\index.html" class="logo">
-                <img src="..\images\logo.png">
-            </a>
             <ul class="top-nav">
+                <a href=".\index.html" class="logo">
+                    <img src="..\images\logo.png">
+                </a>
                 <li>
-                    <a href=".\index.html">Home</a>
+                    <a href=".\index.html"></a>Home</a>
                 </li>
                 <li class="scroll-to-section">men's</li>
                 <li class="scroll-to-section">women's</li>
                 <li class="scroll-to-section">kid's</li>
-                <li class="dropdown">
-                    <a href="#no">pages</a>
-                    <ul>
+                <li class="dropdown-btn">
+                    pages
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="dropdown">
                         <li>about us</li>
                         <li>products</li>
                         <li>single products</li>
                         <li>contact us</li>
                     </ul>
                 </li>
-                <li class="dropdown">features</li>
+                <li class="dropdown-btn">
+                    features
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="dropdown">
+                        <li>features page 1</li>
+                        <li>features page 2</li>
+                        <li>features page 3</li>
+                        <li>features page 4</li>
+                    </ul>
+                </li>
                 <li>explore</li>
             </ul>
+        </div>
         </div>
     </header>
 
     <article class="banner">
+        <div class="container" id="banner">
+            <div class="banner-child" id="big">
+                <img class="banner-img" src="\images\left-banner-image.jpg">
+                <p id="big-text">we are hexashop</p>
+                <p id="small-under-text">Awesome, clean & creative HTML5 Template</p>
+                <p id="button">purchase now!
+                <p>
+            </div>
+            <div class="banner-child banner-child-small" id="small-1">
+                <img class="banner-img" src="\images\baner-right-image-01.jpg">
+                <p class="subcat-name">women</p>
+                <p class="subcat-description">best clothes for women</p>
+            </div>
+            <div class="banner-child banner-child-small" id="small-2">
+                <img class="banner-img" src="\images\baner-right-image-02.jpg">
+                <p class="subcat-name">men</p>
+                <p class="subcat-description">best clothes for men</p>
+            </div>
+            <div class="banner-child banner-child-small" id="small-3">
+                <img class="banner-img" src="\images\baner-right-image-03.jpg">
+                <p class="subcat-name">kids</p>
+                <p class="subcat-description">best clothes for kids</p>
+            </div>
+            <div class="banner-child banner-child-small" id="small-4">
+                <img class="banner-img" src="\images\baner-right-image-04.jpg">
+                <p class="subcat-name">accesories</p>
+                <p class="subcat-description">best trend accessories</p>
+            </div>
+        </div>
     </article>
 
-    <section class="section" id="men"></section>
-    <section class="section" id="women"></section>
-    <section class="section" id="kid"></section>
-    <section class="section" id="explore"></section>
-    <section class="section" id="social"></section>
-    <section class="section" id="subscribe"></section>
+    <section class="section features" id="men">
+        <p class="section-title">Men's lastest</p>
+        <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
+    <div class="carousel-container" >
+            <div class="nav-btn">
+                <button class="prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="block-container">
+                <img src="\images\men-01.jpg">
+                <div class="down-content">
+                    <p class="title">classic spring
+                    </p>
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="down-content">
+                    <p class="price">$120.00</p>
+                </div>
+                <div class="icon-popup">
+                    <a href="single-product.html"><i class="fa fa-eye"></i></a>
+                    <a href="single-product.html"><i class="fa fa-star"></i></a>
+                    <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="block-container">
+                <img src="\images\men-02.jpg">
+                <div class="down-content">
+                    <p class="title">air force 1 x
+                    </p>
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="down-content">
+                    <p class="price">$90.00</p>
+                </div>
+                <div class="icon-popup">
+                    <a href="single-product.html"><i class="fa fa-eye"></i></a>
+                    <a href="single-product.html"><i class="fa fa-star"></i></a>
+                    <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="block-container">
+                <img src="\images\men-03.jpg">
+                <div class="down-content">
+                    <p class="title">love nana '20
+                    </p>
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="down-content">
+                    <p class="price">$150.00</p>
+                </div>
+                <div class="icon-popup">
+                    <a href="single-product.html"><i class="fa fa-eye"></i></a>
+                    <a href="single-product.html"><i class="fa fa-star"></i></a>
+                    <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="block-container">
+                <img src="\images\men-01.jpg">
+                <div class="down-content">
+                    <p class="title">classic spring
+                    </p>
+                    <ul class="stars">
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                        <li><i class="fa fa-star"></i></li>
+                    </ul>
+                </div>
+                <div class="down-content">
+                    <p class="price">$120.00</p>
+                </div>
+                <div class="icon-popup">
+                    <a href="single-product.html"><i class="fa fa-eye"></i></a>
+                    <a href="single-product.html"><i class="fa fa-star"></i></a>
+                    <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <button class="next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
 
-    <footer class="footer"></footer>
+
+    <section class="section features" id="women"></section>
+    <section class="section features" id="kid"></section>
+    <section class="section" id="explore"></section>
+
+    <section class="section" id="social">
+        <p class="section-title">social media</p>
+        <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
+        <div class="icon-row">
+            <img src="\images\instagram-01.jpg">
+            <img src="\images\instagram-02.jpg">
+            <img src="\images\instagram-03.jpg">
+            <img src="\images\instagram-04.jpg">
+            <img src="\images\instagram-05.jpg">
+            <img src="\images\instagram-06.jpg">
+            <div class="overlay-row">
+                <div class="overlay-block">
+                    <div class="overlay-content">
+                        Fashion
+                        <br>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="overlay-block">
+                    <div class="overlay-content">
+                        New
+                        <br>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="overlay-block">
+                    <div class="overlay-content">
+                        Brand
+                        <br>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="overlay-block">
+                    <div class="overlay-content">
+                        Makeup
+                        <br>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="overlay-block">
+                    <div class="overlay-content">
+                        Leather
+                        <br>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <div class="overlay-block">
+                    <div class="overlay-content">
+                        Bag
+                        <br>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="subscribe">
+        <div id="col-1">
+            <h2>by subscribing to our newsletter you can get 30% off</h2>
+            <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Your Email Address">
+                <div class="send">
+                    <i class="fa fa-paper-plane"></i>
+                </div>
+            </form>
+        </div>
+        <div class="small-col" id="col-2">
+            <div class="text-block">
+                <p class="main-text">store location:</p>
+                <p class="sub-text">Sunny Isles Beach, FL 33160, United States</p>
+            </div>
+            <div class="text-block">
+                <p class="main-text">phone:</p>
+                <p class="sub-text">010-020-0340
+                </p>
+            </div>
+            <div class="text-block">
+                <p class="main-text">office location:</p>
+                <p class="sub-text">North Miami Beach
+                </p>
+            </div>
+        </div>
+        <div class="small-col" id="col-3">
+            <div class="text-block">
+                <p class="main-text"> Work Hours:</p>
+                <p class="sub-text"> 07:30 AM - 9:30 PM Daily
+                </p>
+            </div>
+            <div class="text-block">
+                <p class="main-text">Email:</p>
+                <p class="sub-text"> info@company.com
+                </p>
+            </div>
+            <div class="text-block">
+                <p class="main-text">Social Media:
+                </p>
+                <p class="sub-text"> Facebook, Instagram, Behance, Linkedin
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div id="col-1">
+                <img src="\images\white-logo.png">
+                <ul class="sub-content">
+                    <li>16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</li>
+                    <li>hexashop@company.com</li>
+                    <li>010-020-0340</li>
+                </ul>
+            </div>
+            <div id="col-2">
+                <ul class="sub-content">
+                    <li class="title">shopping & categories</li>
+                    <li>men's shopping</li>
+                    <li>women's shopping</li>
+                    <li>kid's shopping</li>
+                </ul>
+            </div>
+            <div id="col-3">
+                <ul class="sub-content">
+                    <li class="title">useful links</li>
+                    <li>homepage</li>
+                    <li>about us</li>
+                    <li>help</li>
+                    <li>contact us</li>
+                </ul>
+            </div>
+            <div id="col-4">
+                <ul class="sub-content">
+                    <li class="title">help & information</li>
+                    <li>help</li>
+                    <li>FAQ's</li>
+                    <li>shipping</li>
+                    <li>tracking ID</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-copyrights">
+            <ul>
+                <li>Copyright © 2022 HexaShop Co., Ltd. All Rights Reserved.
+                </li>
+                <li>
+                    Design:
+                    <a href="#">TemplateMo</a>
+                </li>
+            </ul>
+            <ul class="footer-icons">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-facebook fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-linkedin fa-2x"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-behance fa-2x"></i>
+                    </a>
+                </li>
+            </ul>
+    </footer>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script src="../js/jquery-2.1.0.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/owl-carousel.js"></script>
 </body>
 
 </html>
