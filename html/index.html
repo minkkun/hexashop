@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="/owlcarousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/owlcarousel/owl.carousel.js"></script>
     <script src="https://kit.fontawesome.com/f7dc4ba08c.js" crossorigin="anonymous"></script>
     <title>HEXASHOP</title>
 </head>
@@ -26,9 +29,15 @@
                 <li>
                     <a href=".\index.html"></a>Home</a>
                 </li>
-                <li class="scroll-to-section">men's</li>
-                <li class="scroll-to-section">women's</li>
-                <li class="scroll-to-section">kid's</li>
+                <li class="scroll-to-section">
+                    <a href="#men">men's</a>
+                </li>
+                <li class="scroll-to-section">
+                    <a href="#women">women's</a>
+                </li>
+                <li class="scroll-to-section">
+                    <a href="#kid">kid's</a>
+                </li>
                 <li class="dropdown-btn">
                     pages
                     <i class="fa-solid fa-chevron-down"></i>
@@ -92,16 +101,13 @@
             <p class="section-title">Men's lastest</p>
             <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
         </div>
+
         <div class="carousel-container owl-carousel owl-theme">
-            <div class="nav-btn">
-                <button class="prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-            </div>
+
             <div class="block-container">
                 <img src="\images\men-01.jpg">
                 <div class="down-content">
-                    <p class="title">classic spring
+                    <p class="title">new green jacket
                     </p>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
@@ -124,7 +130,7 @@
             <div class="block-container">
                 <img src="\images\men-02.jpg">
                 <div class="down-content">
-                    <p class="title">air force 1 x
+                    <p class="title">classic dress
                     </p>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
@@ -147,7 +153,7 @@
             <div class="block-container">
                 <img src="\images\men-03.jpg">
                 <div class="down-content">
-                    <p class="title">love nana '20
+                    <p class="title">spring collection
                     </p>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
@@ -167,10 +173,10 @@
                 </div>
             </div>
 
-            <!-- <div class="block-container">
+            <div class="block-container">
                 <img src="\images\men-01.jpg">
                 <div class="down-content">
-                    <p class="title">classic spring
+                    <p class="title">new green jacket
                     </p>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
@@ -188,13 +194,7 @@
                     <a href="single-product.html"><i class="fa fa-star"></i></a>
                     <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                 </div>
-            </div> -->
-            <div class="nav-btn">
-                <button class="next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
             </div>
-        </div>
     </section>
 
 
@@ -204,11 +204,6 @@
             <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
         </div>
         <div class="carousel-container owl-carousel owl-theme">
-            <div class="nav-btn">
-                <button class="prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-            </div>
             <div class="block-container">
                 <img src="\images\women-01.jpg">
                 <div class="down-content">
@@ -278,10 +273,10 @@
                 </div>
             </div>
 
-            <!-- <div class="block-container">
-                <img src="\images\men-01.jpg">
+            <div class="block-container">
+                <img src="\images\women-01.jpg">
                 <div class="down-content">
-                    <p class="title">classic spring
+                    <p class="title">new green jacket
                     </p>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
@@ -299,12 +294,8 @@
                     <a href="single-product.html"><i class="fa fa-star"></i></a>
                     <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                 </div>
-            </div> -->
-            <div class="nav-btn">
-                <button class="next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
             </div>
+
         </div>
     </section>
 
@@ -314,11 +305,7 @@
             <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
         </div>
         <div class="carousel-container owl-carousel owl-theme">
-            <div class="nav-btn">
-                <button class="prev">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </button>
-            </div>
+
             <div class="block-container">
                 <img src="\images\kid-01.jpg">
                 <div class="down-content">
@@ -387,11 +374,10 @@
                     <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                 </div>
             </div>
-
-            <!-- <div class="block-container">
-                <img src="\images\men-01.jpg">
+            <div class="block-container">
+                <img src="\images\kid-01.jpg">
                 <div class="down-content">
-                    <p class="title">classic spring
+                    <p class="title">school collection
                     </p>
                     <ul class="stars">
                         <li><i class="fa fa-star"></i></li>
@@ -409,11 +395,6 @@
                     <a href="single-product.html"><i class="fa fa-star"></i></a>
                     <a href="single-product.html"><i class="fa fa-shopping-cart"></i></a>
                 </div>
-            </div> -->
-            <div class="nav-btn">
-                <button class="next">
-                    <i class="fa-solid fa-chevron-right"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -436,9 +417,10 @@
                 </p>
                 <p class="explore-text">If this template is beneficial for your website or business, please kindly
                     <span>support us</span> a little via PayPal. Please also tell your friends about our great website.
-                    Thank you.</p>
+                    Thank you.
+                </p>
             </div>
-            <div class="col-2">  
+            <div class="col-2">
                 <div class="intro-content" id="content-1">
                     <p class="main">leather bags</p>
                     <p class="sub">lastest collection</p>
@@ -452,7 +434,7 @@
                 <div class="intro-content" id="content-2">
                     <p class="main">different types</p>
                     <p class="sub">over 304 products</p>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -635,9 +617,6 @@
                 </li>
             </ul>
     </footer>
-    <script src="/js/jquery-2.1.0.min.js"></script>
-    <script src="/js/jquery.counterup.min.js"></script>
-    <script src="/owlcarousel/owl.carousel.min.js"></script>
 </body>
 
 </html>
