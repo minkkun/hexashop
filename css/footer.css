@@ -1,0 +1,61 @@
+.footer {
+  background-color: rgb(42, 42, 42);
+  width: 100%;
+  height: auto;
+}
+
+.footer-container {
+   padding: 5% 10%;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.footer .sub-content {
+  color: white;
+  padding-right: 20px;
+}
+
+.footer li {
+  padding-top: 1.5em;
+}
+
+.footer .sub-content .title {
+  font-size: 120%;
+}
+
+.footer hr {
+  background-color: rgb(138, 136, 136);
+  height: 0.1px;
+  margin: 0 9%;
+}
+
+.footer-copyrights {
+  color: rgb(206, 206, 206);
+  font-weight: 300;
+}
+
+.footer-copyrights ul {
+  margin-top: 1.8%;
+  text-align: center;
+}
+
+.footer-copyrights li {
+  padding-top: 0.625%;
+}
+
+.footer-copyrights a {
+  color: rgb(184, 228, 228);
+}
+
+.footer-copyrights a:hover {
+  color: rgb(199, 129, 0);
+}
+
+.footer-icons {
+  padding-bottom: 2%;
+}
+
+.footer-icons li {
+  display: inline;
+  padding: 0 1.25%;
+}

@@ -1,0 +1,30 @@
+.icon-row {
+    justify-content: center;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  .overlay-row {
+    position: absolute;
+    top: 0px;
+  }
+  
+  .overlay-block {
+    background-color: black;
+    opacity: 0;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .overlay-block:hover {
+    opacity: 0.8;
+  }
+  
+  .overlay-content {
+    position: absolute;
+    color: white;
+    top: 140px;
+    left: 20px;
+  }

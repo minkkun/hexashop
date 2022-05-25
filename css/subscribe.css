@@ -1,0 +1,72 @@
+#subscribe {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    gap: 60px;
+  }
+  
+  #subscribe #col-1 {
+    grid-column: 1 / span 1;
+  }
+  
+  #col-1 h2 {
+    font-size: 35px;
+  }
+  
+  #col-1 form {
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  
+  #col-1 input {
+    border: 1px solid black;
+    height: 40px;
+    width: 320px;
+  }
+  
+  #col-1 input::placeholder {
+    padding-left: 20px;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  #col-1 .send {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    filter: invert(1);
+    transition: 0.3s ease;
+    border: 1px solid black;
+  }
+  
+  #col-1 .send:hover {
+    filter: none;
+  }
+  
+  #col-1 li {
+    text-transform: none;
+  }
+  
+  .send i {
+    padding-top: 12px;
+    padding-left: 12px;
+  }
+  
+  #subscribe {
+    padding: 80px;
+    margin: 0 80px;
+  }
+
+  .small-col {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .small-col .main-text {
+    font-weight: 700;
+    font-size: 120%;
+  }
+  
+  .small-col .sub-text {
+    color: rgb(148, 148, 148);
+  }
+  
