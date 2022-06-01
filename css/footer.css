@@ -1,13 +1,14 @@
 .footer {
   background-color: rgb(42, 42, 42);
   width: 100%;
-  height: auto;
+  height: auto;  
 }
 
 .footer-container {
-   padding: 5% 10%;
-  gap: 2em;
+  padding: 5% 10%;
   justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
 }
 
 .footer .sub-content {
@@ -15,8 +16,12 @@
   padding-right: 20px;
 }
 
+.footer .sub-content {
+  margin-top: 1.5em;
+}
+
 .footer li {
-  padding-top: 1.5em;
+  padding-top: 0.5em;
 }
 
 .footer .sub-content .title {
@@ -32,6 +37,8 @@
 .footer-copyrights {
   color: rgb(206, 206, 206);
   font-weight: 300;
+  margin: 0 10%;
+  padding: 5% 0;
 }
 
 .footer-copyrights ul {
@@ -41,6 +48,7 @@
 
 .footer-copyrights li {
   padding-top: 0.625%;
+  font-size: 1em;
 }
 
 .footer-copyrights a {

@@ -18,20 +18,44 @@ $(document).ready(function () {
   });
 });
 
-function dropdown1() {
-  var x = document.getElementById("dd1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+// function dropdown1() {
+//   var x = document.getElementById("dd1");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
 
-function dropdown2() {
-  var x = document.getElementById("dd2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
+// function dropdown2() {
+//   var x = document.getElementById("dd2");
+//   if (x.style.display === "block") {
+//     x.style.display = "none";
+//   } else {
+//     x.style.display = "block";
+//   }
+// }
+
+$(document).ready(function(){
+  $(".mobile-menu-symbol").click(function(){
+    $(".section-list").toggle(300);
+  });
+});
+
+$(document).ready(function(){
+  $("#dd-btn-1").click(function(){
+    $("#dd1").toggle(300);
+  });
+});
+
+$(document).ready(function(){
+  $("#dd-btn-2").click(function(){
+    $("#dd2").toggle(300);
+  });
+});
+
+$(document).ready(function() {
+  $(".mobile-menu-symbol").click(function () {
+      $(".mobile-menu-symbol").toggleClass("active");
+  });
+  });

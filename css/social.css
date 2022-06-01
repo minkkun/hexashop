@@ -1,21 +1,30 @@
 .icon-row {
     justify-content: center;
+    margin: auto;
     margin-top: 40px;
     position: relative;
+    width: 90%;
+  }
+
+  .icon-row img {
+    width: 100%;
   }
   
   .overlay-row {
     position: absolute;
     top: 0px;
   }
+
+  .pic-container
   
   .overlay-block {
     background-color: black;
+    z-index: 100;
     opacity: 0;
     display: block;
-    position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
+    top: 0;
   }
   
   .overlay-block:hover {
@@ -25,6 +34,5 @@
   .overlay-content {
     position: absolute;
     color: white;
-    top: 140px;
-    left: 20px;
+    top: 1.5em;
   }
