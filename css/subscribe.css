@@ -1,7 +1,7 @@
-#subscribe {
+.subscribe {
   display: flex;
   flex-direction: column;
-  margin: 10% 10% !important;
+  padding: 5% 10% !important;
 }
 
 #subscribe #col-1 > * {
@@ -12,7 +12,7 @@
   font-size: 2em;
 }
 
-#col-1 form {
+.subscribe form {
   flex-direction: column;
   gap: 1em;
   justify-content: space-between;
@@ -54,13 +54,8 @@
   text-transform: none;
 }
 
-#subscribe {
-  margin: 0 80px;
-}
-
 .small-col-container {
   gap: 2em;
-  
 }
 
 .small-col {
@@ -75,4 +70,32 @@
 
 .small-col .sub-text {
   color: rgb(148, 148, 148);
+}
+
+
+@media only screen and (max-width: 769px) {
+  
+}
+
+@media only screen and (min-width: 770px) {
+  .subscribe {
+    flex-direction: row;
+    gap: 3em;
+  }
+
+  .subscribe h2  {
+    margin: 0 !important;
+  }
+
+  .subscribe form {
+    flex-direction: row ;
+  }
+
+  .subscribe .send {
+    width: 3em;
+  }
+
+  .subscribe input {
+    width: 20em !important;
+  }
 }

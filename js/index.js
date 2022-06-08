@@ -18,44 +18,63 @@ $(document).ready(function () {
   });
 });
 
-// function dropdown1() {
-//   var x = document.getElementById("dd1");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
-//   }
-// }
+// $(document).ready(function () {
+//   $(".mobile-menu-symbol").click(function () {
+//     $(".section-list").toggle(300);
+//   });
+// });
 
-// function dropdown2() {
-//   var x = document.getElementById("dd2");
-//   if (x.style.display === "block") {
-//     x.style.display = "none";
-//   } else {
-//     x.style.display = "block";
+// $(document).ready(function () {
+//   if ($(window).width() < 767) {
+//     $("#dd-btn-1").click(function () {
+//       $("#dd1").toggle(300);
+//     });
 //   }
-// }
+// });
 
-$(document).ready(function(){
-  $(".mobile-menu-symbol").click(function(){
+$(document).ready(function () {
+  $(".mobile-menu-symbol").click(function () {
     $(".section-list").toggle(300);
   });
-});
-
-$(document).ready(function(){
-  $("#dd-btn-1").click(function(){
-    $("#dd1").toggle(300);
+  if ($(window).width() < 767) {
+    $("#dd-btn-1").click(function () {
+      $("#dd1").toggle(300);
+    });
+  }
+  if ($(window).width() < 767) {
+    $("#dd-btn-2").click(function () {
+      $("#dd2").toggle(300);
+    });
+  }
+  $(".scroll-to-section").click(function () {
+    $(".section-list").hide(300);
+    $(".mobile-menu-symbol").toggleClass("active");
   });
-});
-
-$(document).ready(function(){
-  $("#dd-btn-2").click(function(){
-    $("#dd2").toggle(300);
-  });
-});
-
-$(document).ready(function() {
   $(".mobile-menu-symbol").click(function () {
-      $(".mobile-menu-symbol").toggleClass("active");
+    $(".mobile-menu-symbol").toggleClass("active");
   });
-  });
+});
+
+// $(document).ready(function () {
+//   $(".scroll-to-section").click(function () {
+//     $(".section-list").hide(300);
+//     $(".mobile-menu-symbol").toggleClass("active");
+//   });
+// });
+
+// $(document).ready(function () {
+//   $(".mobile-menu-symbol").click(function () {
+//     $(".mobile-menu-symbol").toggleClass("active");
+//   });
+// });
+
+// $(window).scroll(function (e) {
+//   var $el = $(".header");
+//   var isPositionFixed = $el.css("position") == "fixed";
+//   if (window.pageYOffset > 1500 && !isPositionFixed) {
+//     $el.addClass("position-sticky");
+//   }
+//   if (window.pageYOffset < 1500  && isPositionFixed) {
+//     $el.addClass("position-fixed");
+//   }
+// });

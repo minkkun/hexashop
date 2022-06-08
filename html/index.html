@@ -34,12 +34,12 @@
 
 <body>
     <header class="header">
-        <div class="container flex">
-            <ul class="top-nav flex list-style-none font-capitalize">
-                <div class="logo flex align-items-center">
-                    <a href="./index.html" ><img src="../images/logo.png"></a>      
+        <div class="container">
+            <div class="top-nav flex-column justify-content-center align-items-center list-style-none font-capitalize">
+                <div class="logo flex align-items-center width-max-content">
+                    <a href="./index.html"><img src="../images/logo.png"></a>
                     <div id="mobile-menu-symbol" class="mobile-menu-symbol flex">
-                        <span id="middle-line"></span>
+                        <span class="display-inline-block" id="middle-line"></span>
                     </div>
                 </div>
                 <ul class="section-list">
@@ -55,73 +55,85 @@
                     <li class="scroll-to-section">
                         <a href="#kid">kid's</a>
                     </li>
-                    <li class="dropdown-btn" id="dd-btn-1">
-                        pages
-                        <i class="fa-solid fa-chevron-down"></i>
+
+                    <li class="dropdown-trigger position-relative">
+                        <span class="dropdown-btn" id="dd-btn-1">
+                            pages
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <ul class="dropdown display-block position-absolute flex-column list-style-none"
+                            id="dd1">
+                            <li>about us</li>
+                            <li>products</li>
+                            <li>single products</li>
+                            <li>contact us</li>
+                        </ul>
                     </li>
-                    <ul class="dropdown flex list-style-none" id="dd1">
-                        <li>about us</li>
-                        <li>products</li>
-                        <li>single products</li>
-                        <li>contact us</li>
-                    </ul>
-                    <li class="dropdown-btn" id="dd-btn-2">
-                        features
-                        <i class="fa-solid fa-chevron-down"></i>
+                    <li class="dropdown-trigger position-relative">
+                        <span class="dropdown-btn" id="dd-btn-2">
+                            features
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <ul class="dropdown display-block position-absolute flex-column list-style-none"
+                            id="dd2">
+                            <li>features page 1</li>
+                            <li>features page 2</li>
+                            <li>features page 3</li>
+                            <li>features page 4</li>
+                        </ul>
                     </li>
-                    <ul class="dropdown flex list-style-none" id="dd2">
-                        <li>features page 1</li>
-                        <li>features page 2</li>
-                        <li>features page 3</li>
-                        <li>features page 4</li>
-                    </ul>
                     <li>explore</li>
-                </ul>          
-            </ul>
+                </ul>
+            </div>
         </div>
         </div>
     </header>
 
     <article class="banner">
         <div class="container flex font-capitalize" id="banner">
-            <div class="banner-child position-relative flex" id="big">
+            <div class="banner-child align-items-center justify-content-center position-relative flex" id="big">
                 <img class="banner-img" src="/images/left-banner-image.jpg" />
-                <div class="banner-content">
-                    <p id="big-text" class="font-700">we are hexashop</p>
-                    <p id="small-under-text" class="italic">Awesome, clean & creative HTML5 Template</p>
-                    <p id="button">purchase now!
+                <div class="banner-content flex-column justify-content-center">
+                    <p class="text-align-center font-700" id="big-text">we are hexashop</p>
+                    <p id="small-under-text" class="italic width-max-content">Awesome, clean & creative HTML5 Template
+                    </p>
+                    <p class="width-max-content" id="button">purchase now!
                     <p>
                 </div>
             </div>
-            <div class="banner-child flex banner-child-small" id="small-1">
+            <div class="banner-child align-items-center justify-content-center flex banner-child-small" id="small-1">
                 <img class="banner-img" src="/images/baner-right-image-01.jpg">
-                <div class="banner-content">
+                <div class="banner-content flex-column justify-content-center">
                     <p class="subcat-name text-align-center font-700">women</p>
                     <p class="subcat-description text-align-center italic">best clothes for women</p>
                 </div>
             </div>
-            <div class="banner-child flex banner-child-small" id="small-2">
-                <img class="banner-img" src="/images/baner-right-image-02.jpg">
-                <div class="banner-content">
-                    <p class="subcat-name text-align-center font-700">men</p>
-                    <p class="subcat-description text-align-center italic">best clothes for men</p>
-                </div>
-            </div>
-            <div class="banner-child flex banner-child-small" id="small-3">
+            <div class="banner-child align-items-center justify-content-center flex banner-child-small" id="small-3">
                 <img class="banner-img" src="/images/baner-right-image-03.jpg">
-                <div class="banner-content">
+                <div class="banner-content flex-column justify-content-center">
                     <p class="subcat-name text-align-center font-700">kids</p>
                     <p class="subcat-description text-align-center italic">best clothes for kids</p>
                 </div>
             </div>
-            <div class="banner-child flex banner-child-small" id="small-4">
+
+            <div class="banner-child align-items-center justify-content-center flex banner-child-small" id="small-2">
+                <img class="banner-img" src="/images/baner-right-image-02.jpg">
+                <div class="banner-content flex-column justify-content-center">
+                    <p class="subcat-name text-align-center font-700">men</p>
+                    <p class="subcat-description text-align-center italic">best clothes for men</p>
+                </div>
+            </div>
+
+            <div class="banner-child align-items-center justify-content-center flex banner-child-small" id="small-4">
                 <img class="banner-img" src="/images/baner-right-image-04.jpg">
-                <div class="banner-content">
+                <div class="banner-content flex-column justify-content-center">
                     <p class="subcat-name text-align-center font-700">accesories</p>
                     <p class="subcat-description text-align-center italic">best trend accessories</p>
                 </div>
             </div>
+            <!-- </div> -->
         </div>
+
     </article>
 
     <section class="section features" id="men">
@@ -428,9 +440,9 @@
         </div>
     </section>
 
-    <section class="section" id="explore">
-        <div class="container flex  padding-section-intro">
-            <div class="col-1">
+    <section class="section explore" id="explore">
+        <div class="container padding-section-intro">
+            <div class="text-align-center" id="big-text">
                 <p class="section-title font-700 font-capitalize">explore our products</p>
                 <p class="explore-text italic">You are allowed to use this HexaShop HTML CSS template. You can feel free
                     to
@@ -452,22 +464,22 @@
                     Thank you.
                 </p>
             </div>
-            <div class="col-2 font-capitalize">
-                <div class="intro-content flex" id="content-1">
-                    <p class="main font-700">leather bags</p>
-                    <p class="sub italic">lastest collection</p>
-                </div>
-                <div class="intro-pic" id="pic-1">
-                    <img src="/images/explore-image-01.jpg" alt="">
-                </div>
-                <div class="intro-pic" id="pic-2">
-                    <img src="/images/explore-image-02.jpg" alt="">
-                </div>
-                <div class="intro-content flex" id="content-2">
-                    <p class="main font-700">different types</p>
-                    <p class="sub italic">over 304 products</p>
-                </div>
+            <!-- <div class="col-2 font-capitalize"> -->
+            <div class="intro-content font-capitalize flex" id="content-1">
+                <p class="main font-700">leather bags</p>
+                <p class="sub italic">lastest collection</p>
             </div>
+            <div class="intro-pic font-capitalize" id="pic-1">
+                <img src="/images/explore-image-01.jpg" alt="">
+            </div>
+            <div class="intro-pic font-capitalize" id="pic-2">
+                <img src="/images/explore-image-02.jpg" alt="">
+            </div>
+            <div class="intro-content font-capitalize flex" id="content-2">
+                <p class="main font-700">different types</p>
+                <p class="sub italic">over 304 products</p>
+            </div>
+            <!-- </div> -->
         </div>
     </section>
 
@@ -476,54 +488,61 @@
             <p class="section-title font-700 font-capitalize">social media</p>
             <p class="section-subtitle">Details to details is what makes Hexashop different from other themes.</p>
         </div>
-        <div class="icon-row flex">
+        <div class="icon-row position-relative flex">
             <div class="pic-container position-relative">
                 <img src="/images/instagram-01.jpg" alt="">
-                <div class="overlay-block position-absolute">
-                    <div class="overlay-content">
+                <div class="overlay-block display-block width-100p position-absolute">
+                    <div class="overlay-content position-absolute">
                         Fashion
                         <br>
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
             </div>
-            <div><img src="/images/instagram-02.jpg" alt=""></div>
-            <div><img src="/images/instagram-03.jpg" alt=""></div>
-            <div><img src="/images/instagram-04.jpg" alt=""></div>
-            <div><img src="/images/instagram-05.jpg" alt=""></div>
-            <div><img src="/images/instagram-06.jpg" alt=""></div>
-            <div class="overlay-row flex">
-
-                <div class="overlay-block">
-                    <div class="overlay-content">
+            <div class="pic-container position-relative">
+                <img src="/images/instagram-02.jpg" alt="">
+                <div class="overlay-block width-100p display-block position-absolute">
+                    <div class="overlay-content position-absolute ">
                         New
                         <br>
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-                <div class="overlay-block">
-                    <div class="overlay-content">
+            </div>
+            <div class="pic-container position-relative">
+                <img src="/images/instagram-03.jpg" alt="">
+                <div class="overlay-block width-100p display-block position-absolute">
+                    <div class="overlay-content position-absolute ">
                         Brand
                         <br>
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-                <div class="overlay-block">
-                    <div class="overlay-content">
+            </div>
+            <div class="pic-container position-relative">
+                <img src="/images/instagram-04.jpg" alt="">
+                <div class="overlay-block width-100p display-block position-absolute">
+                    <div class="overlay-content position-absolute ">
                         Makeup
                         <br>
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-                <div class="overlay-block">
-                    <div class="overlay-content">
+            </div>
+            <div class="pic-container position-relative">
+                <img src="/images/instagram-05.jpg" alt="">
+                <div class="overlay-block width-100p display-block position-absolute">
+                    <div class="overlay-content position-absolute">
                         Leather
                         <br>
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-                <div class="overlay-block">
-                    <div class="overlay-content">
+            </div>
+            <div class="pic-container position-relative">
+                <img src="/images/instagram-06.jpg" alt="">
+                <div class="overlay-block width-100p display-block position-absolute">
+                    <div class="overlay-content position-absolute ">
                         Bag
                         <br>
                         <i class="fa-brands fa-instagram"></i>
@@ -533,10 +552,12 @@
         </div>
     </section>
 
-    <section class="section" id="subscribe">
+    <section class="section subscribe" id="subscribe">
         <div id="col-1">
-            <h2 class="font-capitalize font-700 font-capitalize">by subscribing to our newsletter you can get 30% off</h2>
-            <p class="section-subtitle italic">Details to details is what makes Hexashop different from other themes.</p>
+            <h2 class="font-capitalize font-700 font-capitalize">by subscribing to our newsletter you can get 30% off
+            </h2>
+            <p class="section-subtitle italic">Details to details is what makes Hexashop different from other themes.
+            </p>
             <form class="flex">
                 <input type="text" placeholder="Your Name">
                 <input type="text" placeholder="Your Email Address">
@@ -585,8 +606,8 @@
     </section>
 
     <footer class="footer list-style-none ">
-        <div class="footer-container flex">
-            <div id="col-1">
+        <div class="footer-container text-align-center flex-column">
+            <div class="flex-column" id="col-1">
                 <img src="/images/white-logo.png">
                 <ul class="sub-content">
                     <li>16501 Collins Ave, Sunny Isles Beach, FL 33160, United States</li>

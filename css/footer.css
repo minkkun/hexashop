@@ -1,14 +1,13 @@
 .footer {
   background-color: rgb(42, 42, 42);
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 
 .footer-container {
   padding: 5% 10%;
   justify-content: space-between;
-  flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer .sub-content {
@@ -66,4 +65,22 @@
 .footer-icons li {
   display: inline;
   padding: 0 1.25%;
+}
+
+@media only screen and (min-width: 770px) {
+  .footer .footer-container {
+    flex-direction: row;
+  }
+
+  .footer .footer-container li {
+    text-align: left;
+  }
+
+  .footer #col-1 img{
+    width: fit-content;
+  }
+
+  .footer .footer-copyrights {
+    padding: 2% 0;
+  }
 }
